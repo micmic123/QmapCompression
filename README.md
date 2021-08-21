@@ -1,10 +1,10 @@
 # Variable-Rate Deep Image Compression through Spatially-Adaptive Feature Transform
 ![Figure 2](./assets/compressed_images_with_various_qmaps.svg)
 This repository is the implementation of "Variable-Rate Deep Image Compression through Spatially-Adaptive Feature Transform (ICCV 2021)".
-Our code is based on [CompressAI](https://github.com/InterDigitalInc/CompressAI), a PyTorch library for learning-based image compression.
+Our code is based on [CompressAI](https://github.com/InterDigitalInc/CompressAI).
 
 > **Abstract:** 
->We propose a versatile deep image compression network based on Spatial Feature Transform ([SFT]((https://arxiv.org/abs/1804.02815))), which takes a source image and a corresponding quality map as inputs and produce a compressed image with variable rates. 
+>We propose a versatile deep image compression network based on Spatial Feature Transform ([SFT](https://arxiv.org/abs/1804.02815)), which takes a source image and a corresponding quality map as inputs and produce a compressed image with variable rates. 
 >Our model covers a wide range of compression rates using a single model, which is controlled by arbitrary pixel-wise quality maps. 
 >In addition, the proposed framework allows us to perform task-aware image compressions for various tasks, e.g., classification, by efficiently estimating optimized quality maps specific to target tasks for our encoding network. 
 >This is even possible with a pretrained network without learning separate models for individual tasks. 

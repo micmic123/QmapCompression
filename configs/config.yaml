@@ -1,0 +1,29 @@
+# logger options
+snapshot_save_itr: 100000
+log_itr: 1000
+test_itr: 10000
+
+# optimization options
+max_itr: 2000000
+lr: 0.0001
+lr_aux: 0.001
+lr_shedule_step: 1400000
+lr_shedule_scale: 0.1
+clip_max_norm: 1
+
+# fine-tuning options
+set_lr: 0
+
+# model hyperparamters
+N: 192
+M: 192
+sft_ks: 3
+
+# data options
+trainset: ./data/trainset_coco.csv
+testset: ./data/kodak.csv
+batchsize: 8
+batchsize_test: 1
+patchsize: 256
+worker_num: 3
+p: 0.2

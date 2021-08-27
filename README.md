@@ -1,6 +1,6 @@
 # Variable-Rate Deep Image Compression through Spatially-Adaptive Feature Transform
 ![Figure 2](./assets/compressed_images_with_various_qmaps.svg)
-This repository is the implementation of "Variable-Rate Deep Image Compression through Spatially-Adaptive Feature Transform (ICCV 2021)".
+This repository is the implementation of ["Variable-Rate Deep Image Compression through Spatially-Adaptive Feature Transform"](https://arxiv.org/abs/2108.09551) (ICCV 2021).
 Our code is based on [CompressAI](https://github.com/InterDigitalInc/CompressAI).
 
 > **Abstract:** 
@@ -64,13 +64,13 @@ We used the same configuration as `./configs/config.yaml` to train our model.
 You can change it as you want.
 We expect that larger number of training iteration will lead to the better performance.
 
-### Quick start
+### Train
 `$ python train.py --config=./configs/config.yaml --name=your_instance_name` \
 The checkpoints of the model will be saved in `./results/your_instance_name/snapshots`. \
 Training for 2M iterations will take about 2-3 weeks on a single GPU like Titan Xp.
 At least 12GB GPU memory is needed for the default training setting.
 
-### Resume from the checkpoint
+### Resume from a checkpoint
 `$ python train.py --resume=./results/your_instance_name/snapshots/your_snapshot_name.pt` \
 By default, the original configuration of the checkpoint `./results/your_instance_name/config.yaml` will be used.
 
@@ -116,8 +116,10 @@ A result plot `./classificatoin_result.png` will be generated.
 
 ## Citation
 ```bibtex
-
+@inproceedings{song2021variablerate,
+  title={Variable-Rate Deep Image Compression through Spatially-Adaptive Feature Transform}, 
+  author={Song, Myungseo and Choi, Jinyoung and Han, Bohyung},
+  booktitle={ICCV},
+  year={2021}
+}
 ```
-
-## Etc.
-- The model code of ablation study is in `./models/ablations.py`.

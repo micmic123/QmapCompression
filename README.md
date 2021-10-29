@@ -77,6 +77,13 @@ By default, the original configuration of the checkpoint `./results/your_instanc
 ## Evaluation
 `$ python eval.py --snapshot=./results/your_instance_name/snapshots/your_snapshot_name.pt --testset=./data/kodak.csv`
 
+### Pretrained model
+We release the [pretrained model](https://drive.google.com/file/d/1pLychHGv4PWCHB5fJrjUkQTleIZ40RkY/view?usp=sharing).
+Unzip the file and put it in `results` directory.
+You can use it like following: \
+`$ python eval.py --snapshot=./results/pretrained_dist/snapshots/198M_itrs.pt --testset=./data/kodak.csv`
+
+
 ### Final evaluation results
 ```
 [ Test-1 ] Total: 0.5104 | Real BPP: 0.2362 | BPP: 0.2348 | PSNR: 29.5285 | MS-SSIM: 0.9360 | Aux: 93 | Enc Time: 0.2403s | Dec Time: 0.0356s
@@ -116,10 +123,11 @@ A result plot `./classificatoin_result.png` will be generated.
 
 ## Citation
 ```bibtex
-@inproceedings{song2021variablerate,
-  title={Variable-Rate Deep Image Compression through Spatially-Adaptive Feature Transform}, 
+@inproceedings{song2021variable,
+  title={Variable-Rate Deep Image Compression through Spatially-Adaptive Feature Transform},
   author={Song, Myungseo and Choi, Jinyoung and Han, Bohyung},
-  booktitle={ICCV},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={2380--2389},
   year={2021}
 }
 ```

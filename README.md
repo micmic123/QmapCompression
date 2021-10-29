@@ -81,7 +81,7 @@ By default, the original configuration of the checkpoint `./results/your_instanc
 We release the [pretrained model](https://drive.google.com/file/d/1TgCHlA4J2r_566XyfELl-BbANygVf9_u/view?usp=sharing).
 Unzip the file and put it in `results` directory.
 You can use it like following: \
-`$ python eval.py --snapshot=./results/pretrained_dist/snapshots/198M_itrs.pt --testset=./data/kodak.csv`
+`$ python eval.py --snapshot=./results/pretrained_dist/snapshots/2M_itrs.pt --testset=./data/kodak.csv`
 
 
 ### Final evaluation results

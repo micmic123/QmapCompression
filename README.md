@@ -78,7 +78,7 @@ By default, the original configuration of the checkpoint `./results/your_instanc
 `$ python eval.py --snapshot=./results/your_instance_name/snapshots/your_snapshot_name.pt --testset=./data/kodak.csv`
 
 ### Pretrained model
-We release the [pretrained model](https://drive.google.com/file/d/1pLychHGv4PWCHB5fJrjUkQTleIZ40RkY/view?usp=sharing).
+We release the [pretrained model](https://drive.google.com/file/d/1TgCHlA4J2r_566XyfELl-BbANygVf9_u/view?usp=sharing).
 Unzip the file and put it in `results` directory.
 You can use it like following: \
 `$ python eval.py --snapshot=./results/pretrained_dist/snapshots/198M_itrs.pt --testset=./data/kodak.csv`
